@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Biryani Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="biryani">
+            <h1>Chicken Biryani Recipe</h1>
+            <img src="biryani.jpg" alt="Chicken Biryani">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>500 grams chicken, cut into pieces</li>
+                <li>2 cups basmati rice</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/2 cup plain yogurt</li>
+                <li>2 tablespoons ginger-garlic paste</li>
+                <li>1/2 cup chopped cilantro</li>
+                <li>1/2 cup chopped mint leaves</li>
+                <li>2 tablespoons biryani masala</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>4-5 green cardamom pods</li>
+                <li>4-5 cloves</li>
+                <li>1 bay leaf</li>
+                <li>2 tablespoons ghee or oil</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+                <li>Saffron strands soaked in 1/4 cup warm milk (optional)</li>
+                <li>Fried onions for garnish (optional)</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>Rinse the basmati rice thoroughly and soak it in water for 30 minutes. Drain and set aside.</li>
+                <li>In a large pot, heat ghee or oil over medium heat. Add cumin seeds, cardamom pods, cloves, and bay leaf. Sauté for a minute until fragrant.</li>
+                <li>Add the sliced onions and cook until golden brown. Add the ginger-garlic paste and cook for another minute.</li>
+                <li>Add the chopped tomatoes and cook until they become soft and oil starts to separate.</li>
+                <li>Mix in the chicken pieces, yogurt, biryani masala, turmeric powder, red chili powder, and salt. Cook until the chicken is browned and cooked through.</li>
+                <li>Add the chopped cilantro and mint leaves. Stir well.</li>
+                <li>In a separate pot, bring water to a boil. Add the soaked and drained rice to the boiling water. Cook until the rice is 70% cooked. Drain the water from the rice.</li>
+                <li>Layer the partially cooked rice over the chicken mixture in the pot. If using, drizzle saffron milk over the top. Cover the pot with a tight-fitting lid and cook on low heat for 20-25 minutes, allowing the flavors to meld.</li>
+                <li>Garnish with fried onions if desired. Serve hot with raita or yogurt.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Afghani Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="paneer-afghani">
+            <h1>Paneer Afghani Recipe</h1>
+            <img src="images/paneer.jpg" alt="Paneer Afghani">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>250 grams paneer (cottage cheese), cubed</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tablespoons cream</li>
+                <li>2 tablespoons lemon juice</li>
+                <li>2 tablespoons ginger-garlic paste</li>
+                <li>1 tablespoon green chili paste</li>
+                <li>1 teaspoon cumin powder</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>1/2 teaspoon red chili powder</li>
+                <li>1/2 teaspoon paprika (for color, optional)</li>
+                <li>Salt to taste</li>
+                <li>2 tablespoons oil or ghee</li>
+                <li>Fresh cilantro for garnish</li>
+                <li>1 tablespoon Kasuri methi (dried fenugreek leaves, optional)</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>In a mixing bowl, combine yogurt, cream, lemon juice, ginger-garlic paste, green chili paste, cumin powder, coriander powder, turmeric powder, garam masala, red chili powder, paprika, and salt. Mix well to form a smooth marinade.</li>
+                <li>Add the paneer cubes to the marinade and gently coat them with the mixture. Cover and refrigerate for at least 1 hour, or overnight for best results.</li>
+                <li>Preheat your oven to 200°C (390°F). If using a grill or tandoor, preheat it accordingly.</li>
+                <li>Thread the marinated paneer cubes onto skewers. If using wooden skewers, soak them in water for 30 minutes beforehand to prevent burning.</li>
+                <li>Place the skewers on a baking tray lined with parchment paper. Brush the paneer with a little oil or ghee.</li>
+                <li>Bake in the preheated oven for 15-20 minutes, or until the edges are slightly charred and the paneer is cooked through. If using a grill or tandoor, cook for the same amount of time, turning occasionally.</li>
+                <li>Remove from the oven and sprinkle with Kasuri methi, if using. Garnish with fresh cilantro.</li>
+                <li>Serve hot with naan, roti, or a side salad.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

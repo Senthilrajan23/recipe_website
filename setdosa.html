@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vada Curry Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="vada-curry">
+            <h1>Vada Curry Recipe</h1>
+            <img src="images/setdosa.jpg" alt="Vada Curry">
+            
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>1 cup Bengal gram dal</li>
+                <li>7 red chilies</li>
+                <li>Salt to taste</li>
+                <li>1/2 tsp Hing (asafoetida)</li>
+                <li>5 cloves</li>
+                <li>2 pieces cinnamon</li>
+                <li>3 cardamom pods</li>
+                <li>1 tsp fennel seeds</li>
+                <li>15 cloves garlic, finely chopped</li>
+                <li>2 pieces ginger</li>
+                <li>4 green chilies</li>
+                <li>4 red chilies</li>
+                <li>2 tsp poppy seeds</li>
+                <li>1 handful fried gram</li>
+                <li>1/2 cup grated coconut</li>
+                <li>1 cup coriander leaves</li>
+                <li>1/2 cup mint leaves</li>
+                <li>5 tbsp oil</li>
+                <li>1/2 tsp fennel seeds</li>
+                <li>1 clove</li>
+                <li>1 piece cinnamon</li>
+                <li>1 cardamom pod</li>
+                <li>1 bay leaf</li>
+                <li>3 red chilies</li>
+                <li>4 medium onions, thinly sliced</li>
+                <li>1 1/2 tsp Kashmiri red chili powder</li>
+                <li>1 tsp turmeric powder</li>
+                <li>Salt to taste</li>
+                <li>1/2 cup chopped coriander leaves</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>Soak the Bengal gram dal and red chilies in water for at least 3 hours. Drain and grind into a coarse paste, then shape into small balls and fry in oil until golden brown. Set aside.</li>
+                <li>For the gravy, dry roast cloves, cinnamon, cardamom, fennel seeds, garlic, ginger, green chilies, red chilies, poppy seeds, fried gram, and grated coconut. Grind into a fine paste.</li>
+                <li>In a pan, heat oil and add fennel seeds, clove, cinnamon, cardamom, bay leaf, and red chilies. Saute onions until soft. Add the ground paste, Kashmiri red chili powder, turmeric powder, and salt. Cook until the gravy thickens.</li>
+                <li>Add the fried vada to the gravy, simmer for 10 minutes, and garnish with chopped coriander leaves.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

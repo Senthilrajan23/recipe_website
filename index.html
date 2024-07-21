@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Fixed Navbar -->
+    <nav class="navbar fixed-navbar">
+        <div class="logo">
+            <img src="4b54cfe45063ec540c16caf89bfa9db9.jpg" alt="Logo">
+        </div>
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">Indian Breads</button>
+                <div class="dropdown-content">
+                    <a href="navRecipe/naan/naan.html">Naan</a>
+                    <a href="navRecipe/roti/roti.html">Roti</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Variety Rice</button>
+                <div class="dropdown-content">
+                    <a href="navRecipe/pulao/pulao.html">Pulao</a>
+                    <a href="navRecipe/biryani/biryani.html">Biryani</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Western</button>
+                <div class="dropdown-content">
+                    <a href="navRecipe/pizza/pizza.html">Pizza</a>
+                    <a href="navRecipe/pasta/pasta.html">Pasta</a>
+                </div>
+                
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Side Dish</button>
+                <div class="dropdown-content">
+                    <a href="navRecipe/curry/curry.html">Curry</a>
+                    <a href="navRecipe/salad/salad.html">Salad</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Snacks</button>
+                <div class="dropdown-content">
+                    <a href="navRecipe/samosa/samosa.html">Samosa</a>
+                    <a href="navRecipe/pakora/pakora.html">Pakora</a>
+                </div>
+            </div>
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="Search...">
+            <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+     <section class="grid">
+    <div class="content">
+        <div class="content-left">
+            <div class="info">
+                <h2>All Your Favourite Recipes <br> At One Place!</h2>
+                <p>Check out all my delicious Indian and Western recipes</p>
+
+            </div>
+            <!-- <button>Explore Recipes</button> -->
+
+        </div>
+        <div class="content-right">
+            <img src = "images/kofta.jpg" alt ="curry">
+
+        </div>
+    </div>
+</section>
+<section class="category">
+    
+        <div class = "collection_card_container">
+            <div class ="card card1" onclick="openPage('setdosa.html')">
+              <div class ="overlay">
+    
+                <div class = "Cardcontent">
+                  <h4>Set Dosa & Vada Curry</h4>
+                  
+                </div>
+              </div>
+            </div>
+    
+    
+                <div class ="card card2" onclick="openPage('paneer.html')">
+                  <div class ="overlay">
+                <div class = "Cardcontent">
+                  <h4>Paneer Afghani</h4>
+                  
+                </div>
+                  </div>
+                </div>
+    
+    
+                <div class ="card card3" onclick="openPage('kofta.html')">
+                <div class ="overlay">
+                <div class = "Cardcontent">
+                  <h4>Chana Kofta Curry </h4>
+                  
+                 
+                </div>
+                </div>
+                </div>
+    
+                <div class ="card card4"  onclick="openPage('CholeBhature.html')">
+                <div class ="overlay">
+                <div class = "Cardcontent">
+                  <h4>Chole Bhature</h4>
+                  
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        
+        
+    
+</section>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <img src="images/raju1.jpg" alt="" class="">
+        <h2>About Us</h2>
+        <p>Welcome to my recipe website! I am passionate about sharing delicious and easy-to-follow recipes that bring joy to your kitchen. I try to curate a diverse collection of recipes from around the world, ensuring there's something for everyone.</p>
+        <p>Whether you're a seasoned chef or a beginner cook, I'd love others try new dishes and elevate your cooking skills. I believe that cooking should be fun, creative, and accessible to all. Join me on this culinary journey and let's make every meal a memorable experience.</p>
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide you with high-quality recipes that are easy to follow and deliver delicious results. We aim to create a community of food lovers who share a passion for cooking and experimenting with new flavors. We are committed to promoting healthy and sustainable cooking practices, and we strive to use fresh, seasonal, and locally sourced ingredients whenever possible.</p>
+        <h3>Our Team</h3>
+        <p>Our team consists of experienced chefs, food bloggers, and home cooks who are dedicated to bringing you the best recipes and cooking tips. We work together to test and refine each recipe, ensuring that they are easy to understand and replicate in your own kitchen.</p>
+    </div>
+</section>
+ <div class="content">
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, comments, or suggestions, feel free to reach out to us using the contact form below or through the contact details provided.</p>
+
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:senthilrajan.sandy@gmail.com">senthilrajan.sandy@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: 8248749355</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 4/313 C, Chennimalai, Erode, Tamil Nadu, 638051</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+ 
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="pizza">
+            <h1>Pizza Recipe</h1>
+            <img src="pizza-5179939_640.jpg" alt="Pizza">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>1 pizza dough</li>
+                <li>1/2 cup pizza sauce</li>
+                <li>1 cup shredded mozzarella cheese</li>
+                <li>1/2 cup sliced pepperoni</li>
+                <li>1/4 cup sliced bell peppers</li>
+                <li>1/4 cup sliced onions</li>
+                <li>1/4 cup sliced mushrooms</li>
+            </ul>
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>Preheat your oven to 475°F (245°C).</li>
+                <li>Roll out the pizza dough on a floured surface.</li>
+                <li>Spread the pizza sauce evenly over the dough.</li>
+                <li>Sprinkle the shredded mozzarella cheese over the sauce.</li>
+                <li>Add the pepperoni, bell peppers, onions, and mushrooms.</li>
+                <li>Bake the pizza in the preheated oven for 10-12 minutes, or until the crust is golden brown and the cheese is melted and bubbly.</li>
+                <li>Remove from the oven, slice, and serve hot.</li>
+            </ol>
+            <button id="printButton">Print Recipe</button>
+            <script>
+                
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+                
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+    window.history.back();
+};
+            </script>
+            
+
+
+        </section>
+    </div>
+    <!-- <script src="print.js"></script> -->
+</body>
+</html>

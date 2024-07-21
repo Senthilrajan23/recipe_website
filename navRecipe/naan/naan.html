@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naan Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="naan">
+            <h1>Naan Recipe</h1>
+            <img src="naan.jpg" alt="Naan">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>2 cups all-purpose flour</li>
+                <li>1/2 cup plain yogurt</li>
+                <li>1/4 cup warm milk</li>
+                <li>2 tablespoons sugar</li>
+                <li>1 teaspoon active dry yeast</li>
+                <li>1/4 teaspoon baking powder</li>
+                <li>1/2 teaspoon salt</li>
+                <li>2 tablespoons oil or melted butter</li>
+                <li>1-2 tablespoons ghee or melted butter (for brushing)</li>
+                <li>Minced garlic or chopped cilantro (optional, for garnish)</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>In a small bowl, dissolve the sugar in warm milk and sprinkle the yeast over it. Let it sit for 5-10 minutes, until frothy.</li>
+                <li>In a large mixing bowl, combine the flour, baking powder, and salt.</li>
+                <li>Make a well in the center and add the yogurt, yeast mixture, and oil or melted butter. Mix until a soft dough forms.</li>
+                <li>Knead the dough on a floured surface for about 5-7 minutes, until smooth and elastic. Place it in a lightly oiled bowl, cover with a damp cloth, and let it rise in a warm place for 1-2 hours, or until doubled in size.</li>
+                <li>Preheat a tawa or non-stick skillet over medium-high heat.</li>
+                <li>Divide the dough into small balls. Roll each ball into an oval or tear-shaped naan, about 1/4-inch thick.</li>
+                <li>Place the rolled-out naan onto the hot tawa. Cook for about 1-2 minutes, or until bubbles start to form. Flip and cook the other side until golden brown.</li>
+                <li>If desired, brush the naan with ghee or melted butter and sprinkle with minced garlic or chopped cilantro.</li>
+                <li>Remove from the skillet and keep warm in a cloth-lined container. Repeat with the remaining dough balls.</li>
+                <li>Serve warm with your favorite curry or vegetable dish.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

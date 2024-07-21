@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 150px; 
+    padding: 20px;
+    text-align: center ;
+    margin-top: 30px;
+
+    
+}
+
+.Ingredients{
+    list-style-type: none;
+    text-align: left;
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+.Instructions{
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Instructions, .content h2{
+    
+    flex-direction: column;
+    list-style-position: inside;
+    text-align: left;
+}
+
+
+.content img {
+    width: 400px;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-position: center;
+
+}
+
+#printButton, #GoBack {
+    background-color: rgb(82, 83, 68, 0.8); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#printButton:hover , #GoBack:hover {
+    background-color: rgb(82, 83, 68);
+}
+
+@media print{
+    #printButton, #GoBack {
+        display: none; 
+    }
+    .content img{
+        max-width: 30%; 
+        height: auto;    
+    
+    }
+}
+
+/* Top Navbar Styles */
+
+
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(82, 83, 68);
+    color: white;
+    padding: 10px 20px;
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.top-navbar .left {
+    font-size: 1.2em;
+}
+
+.top-navbar .right a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    
+}
+
+.top-navbar .right a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile Screen Media Queries */
+
+@media (max-width: 768px) {
+    .top-navbar {
+        flex-direction: column;
+        position: relative;
+        
+    }
+
+
+    .top-navbar .right, .fixed-navbar .menu, .fixed-navbar .searchbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fixed-navbar .menu .dropdown {
+        width: 100%;
+    }
+
+    .fixed-navbar .menu .dropdown-content {
+        width: 100%;
+    }
+    .content{
+        padding-top: 5px;
+    }
+}

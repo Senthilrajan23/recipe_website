@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Pulao Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="veg-pulao">
+            <h1>Veg Pulao Recipe</h1>
+            <img src="pulao.jpg" alt="Veg Pulao">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>1 cup basmati rice</li>
+                <li>1 medium onion, finely chopped</li>
+                <li>1 medium tomato, chopped</li>
+                <li>1 cup mixed vegetables (carrots, peas, beans, etc.), chopped</li>
+                <li>2 green chilies, slit</li>
+                <li>1 teaspoon ginger-garlic paste</li>
+                <li>1/4 cup plain yogurt</li>
+                <li>1/2 teaspoon cumin seeds</li>
+                <li>1/2 teaspoon mustard seeds</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>1 teaspoon chili powder</li>
+                <li>2 tablespoons oil or ghee</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Fresh cilantro for garnish</li>
+                <li>Fried onions for garnish (optional)</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>Rinse the basmati rice under cold water until the water runs clear. Soak it in water for 20-30 minutes, then drain.</li>
+                <li>In a large pan or pressure cooker, heat oil or ghee over medium heat. Add cumin seeds and mustard seeds, and let them splutter.</li>
+                <li>Add the finely chopped onions and sauté until golden brown. Add the ginger-garlic paste and green chilies, and sauté for another minute.</li>
+                <li>Add the chopped tomatoes and cook until they become soft and the oil starts to separate from the masala.</li>
+                <li>Mix in the turmeric powder, garam masala, coriander powder, chili powder, and salt. Stir well.</li>
+                <li>Add the chopped mixed vegetables and sauté for a few minutes. Stir in the yogurt and cook for 2-3 minutes.</li>
+                <li>Add the drained rice and mix gently. Pour in 2 cups of water and bring to a boil.</li>
+                <li>Reduce heat to low, cover the pan, and simmer for 15-20 minutes, or until the rice is cooked and the water is absorbed.</li>
+                <li>Once done, remove from heat and let it sit covered for 5 minutes. Fluff the rice with a fork.</li>
+                <li>Garnish with fresh cilantro and fried onions if desired. Serve hot with raita or a side salad.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakora Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="pakora">
+            <h1>Pakora Recipe</h1>
+            <img src="pakoraa.jpg" alt="pakora">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>1 cup besan (gram flour)</li>
+                <li>1 large potato, thinly sliced</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>1-2 green chilies, finely chopped</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 teaspoon ajwain (carom seeds)</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+                <li>Oil for frying</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>In a large mixing bowl, combine besan, cumin seeds, ajwain, red chili powder, turmeric powder, garam masala, and salt.</li>
+                <li>Add water gradually to make a thick batter. The batter should be thick enough to coat the vegetables.</li>
+                <li>Add the sliced potatoes, onions, and green chilies to the batter. Mix well to coat the vegetables with the batter.</li>
+                <li>Heat oil in a pan over medium heat for frying.</li>
+                <li>Drop spoonfuls of the batter into the hot oil and fry until golden brown and crispy. Avoid overcrowding the pan.</li>
+                <li>Remove the pakoras with a slotted spoon and drain on paper towels.</li>
+                <li>Serve hot with mint chutney or tamarind chutney.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="bhature">
+            <h1>Chole Bhature Recipe</h1>
+            <img src="images/bhature.jpg" alt="bhature">
+            <h2>Ingredients</h2>
+<ul class="Ingredients">
+    <li>400 grams Maida</li>
+    <li>1 teaspoon salt</li>
+    <li>1 teaspoon sugar</li>
+    <li>1 teaspoon baking powder</li>
+    <li>¼ teaspoon baking soda</li>
+    <li>50 grams Rava (¾ in parupu tumbler) soaked in water</li>
+    <li>250 grams white chana (soaked overnight)</li>
+    <li>Tea bag/cloth filled with tea (preferably 3 roses)</li>
+    <li>1 big piece of cinnamon</li>
+    <li>1 bay leaf</li>
+    <li>2 tablespoons grated coconut</li>
+    <li>5 cashews and 1 teaspoon poppy seeds soaked in hot water</li>
+    <li>2 tablespoons oil</li>
+    <li>1 piece cinnamon</li>
+    <li>1 spoon jeera</li>
+    <li>4-5 medium onions, finely chopped</li>
+    <li>2 teaspoons ginger garlic paste</li>
+    <li>½ teaspoon turmeric powder</li>
+    <li>2 teaspoons red chilli powder</li>
+    <li>1 teaspoon Kashmiri mirch powder</li>
+    <li>1 teaspoon coriander powder</li>
+    <li>1 teaspoon cumin powder</li>
+    <li>1½ teaspoons garam masala</li>
+    <li>1½ teaspoons amchoor powder</li>
+    <li>1 teaspoon salt</li>
+    <li>1 slit green chilli</li>
+    <li>Tomato puree made out of 3-4 medium tomatoes</li>
+    <li>1 tablespoon ghee</li>
+    <li>1 teaspoon anardana powder (optional)</li>
+    <li>Crushed kasuri methi</li>
+    <li>Fresh coriander leaves</li>
+</ul>
+
+<h2>Instructions</h2>
+<ol class="Instructions">
+    <li>Mix the dough with required water and oil to a tight dough.</li>
+    <li>Cook the soaked chana in a pressure cooker with a teabag/cloth filled with tea for dark color, add some salt, 1/4 tsp baking soda, a big piece of cinnamon, a bay leaf and pressure cook it for 6-7 whistles. Remove the bay leaf and cinnamon stick (Do not drain the water).</li>
+    <li>Grind the grated coconut, soaked cashews and poppy seeds to a fine paste.</li>
+    <li>In a pan, heat 2 tablespoons of oil, add a piece of cinnamon, a spoon of jeera, and a bay leaf. Sauté until aromatic.</li>
+    <li>Add 4-5 medium onions (finely chopped) and sauté until golden brown. Add 2 teaspoons of ginger garlic paste and stir well.</li>
+    <li>Mix in the masalas: ½ teaspoon turmeric powder, 2 teaspoons red chilli powder, 1 teaspoon Kashmiri mirch powder, 1 teaspoon coriander powder, 1 teaspoon cumin powder, 1½ teaspoons garam masala, 1½ teaspoons amchoor powder, and 1 teaspoon salt. Sauté the masala until darkened and well mixed with the onions (Do not burn them).</li>
+    <li>Add 1 slit green chilli and the coconut mixture. Stir well.</li>
+    <li>Mix in the tomato puree made out of 3-4 medium tomatoes. Stir well.</li>
+    <li>Add the cooked chana with the water and cook for 6-7 minutes with the lid closed on medium flame.</li>
+    <li>Adjust salt and consistency (the gravy is usually thick). Add 1 tablespoon ghee, 1 teaspoon anardana powder (optional), some crushed kasuri methi, and fresh coriander leaves.</li>
+</ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+                
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+    window.history.back();
+};
+            </script>
+            
+
+
+        </section>
+    </div>
+    <!-- <script src="print.js"></script> -->
+</body>
+</html>

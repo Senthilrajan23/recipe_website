@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="samosa">
+            <h1>Samosa Recipe</h1>
+            <img src="samosa.jpg" alt="samosa">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <li>2 cups all-purpose flour</li>
+                <li>1/4 cup vegetable oil</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1/2 cup water (as needed)</li>
+                <li>2 medium potatoes, boiled and mashed</li>
+                <li>1 cup peas, boiled</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 teaspoon mustard seeds</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>1 teaspoon chili powder</li>
+                <li>1 tablespoon ginger, finely chopped</li>
+                <li>2 tablespoons cilantro, chopped</li>
+                <li>Salt to taste</li>
+                <li>Oil for deep frying</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <li>In a large bowl, mix the flour, salt, and vegetable oil. Gradually add water and knead to form a smooth dough. Cover and let it rest for 30 minutes.</li>
+                <li>For the filling, heat some oil in a pan. Add cumin seeds and mustard seeds, and let them splutter.</li>
+                <li>Add the chopped ginger and sauté for a minute. Add turmeric powder, garam masala, chili powder, and salt.</li>
+                <li>Add the mashed potatoes, peas, and cilantro. Mix well and cook for a few minutes. Allow the filling to cool.</li>
+                <li>Divide the dough into small balls and roll each ball into a thin circle. Cut the circle in half to make two semi-circles.</li>
+                <li>Form a cone shape with each semi-circle, fill with the potato mixture, and seal the edges to form a triangle.</li>
+                <li>Heat oil in a deep pan and fry the samosas until golden brown and crispy.</li>
+                <li>Drain on paper towels and serve hot with chutney.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

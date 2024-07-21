@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chana Kofta Curry Recipe</title>
+    <link rel="stylesheet" href="recipe.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar top-navbar">
+        <div class="left">
+            <span>Welcome to Senthil's Cook Book</span>
+        </div>
+        <div class="right">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="chana-kofta">
+            <h1>Chana Kofta Curry Recipe</h1>
+            <img src="images/kofta.jpg" alt="Chana Kofta Curry">
+            <h2>Ingredients</h2>
+            <ul class="Ingredients">
+                <!-- Kofta Ingredients -->
+                <li>1 cup chana dal (split chickpeas), soaked for 4 hours</li>
+                <li>1 large onion, finely chopped</li>
+                <li>1-2 green chilies, chopped</li>
+                <li>2 tablespoons ginger-garlic paste</li>
+                <li>2 tablespoons rice flour</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>Salt to taste</li>
+                <li>Oil for deep frying</li>
+
+                <!-- Curry Ingredients -->
+                <li>2 tablespoons oil</li>
+                <li>1 large onion, finely chopped</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/2 cup plain yogurt</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 cups water</li>
+                <li>Fresh cilantro for garnish</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol class="Instructions">
+                <!-- Kofta Preparation -->
+                <li>Drain the soaked chana dal and grind it coarsely in a food processor.</li>
+                <li>In a bowl, combine the ground chana dal with chopped onions, green chilies, ginger-garlic paste, rice flour, cumin seeds, coriander powder, turmeric powder, garam masala, and salt. Mix well.</li>
+                <li>Heat oil in a deep pan over medium heat. Form small balls or koftas from the mixture and deep-fry until golden brown and crispy. Drain on paper towels and set aside.</li>
+
+                <!-- Curry Preparation -->
+                <li>In a large pan, heat 2 tablespoons of oil. Add cumin seeds and let them splutter.</li>
+                <li>Add the finely chopped onions and sauté until golden brown. Add the chopped tomatoes and cook until they become soft.</li>
+                <li>Mix in the ginger-garlic paste and cook for a minute. Then add coriander powder, turmeric powder, red chili powder, garam masala, and salt. Cook until the oil starts to separate from the masala.</li>
+                <li>Add the plain yogurt and mix well. Cook for a couple of minutes.</li>
+                <li>Add 2 cups of water and bring to a boil. Reduce heat and simmer for 5-7 minutes.</li>
+                <li>Gently add the fried koftas to the curry. Simmer for another 5 minutes to allow the flavors to meld. Adjust seasoning if necessary.</li>
+                <li>Garnish with fresh cilantro and serve hot with rice or naan.</li>
+            </ol>
+
+            <button id="printButton">Print Recipe</button>
+            <script>
+                document.getElementById('printButton').addEventListener('click', function() {
+                    window.print();
+                });
+            </script>
+
+            <button id="GoBack">Go Back</button>
+            <script>
+                document.getElementById('GoBack').onclick = function() {
+                    window.history.back();
+                };
+            </script>
+        </section>
+    </div>
+</body>
+</html>

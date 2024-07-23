@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .content {
@@ -485,6 +486,65 @@ button:hover {
 
     .contact-details h2 {
         font-size: 1.5em;
+    }
+
+    /* grid styles
+    .content-left h2{
+     
+    }
+
+    .collection_card_container{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+
+        
+        
+        
+
+    } */
+}
+
+
+/* Base styles for grid section */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Adjustments for screens 600px wide and below (typical mobile screens) */
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .content-right {
+        margin-top: 10px; /* Optional: Add some spacing between image and text */
+    }
+    .info {
+        margin-bottom: 1px; /* Optional: Adjust spacing as needed */
+        margin-top: 1px;
+    }
+    .info h2 {
+        font-size: 24px !important; /* Adjust font size for smaller screens */
+    }
+    .info p {
+        font-size: 16px !important; /* Adjust font size for smaller screens */
+    }
+    .content-right img {
+        max-width: 50%; /* Ensure images do not overflow their container */
+        height: auto; /* Maintain aspect ratio */
+        
     }
 }
 

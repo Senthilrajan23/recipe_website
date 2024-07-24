@@ -298,6 +298,7 @@ body {
     .fixed-navbar .menu .dropdown {
         width: 100%;
         display: flex;
+     
     }
 
     .fixed-navbar .menu .dropdown-content {
@@ -305,7 +306,7 @@ body {
         right: auto;
         left: auto; 
         top: 10px;
-        position: absolute;
+        position:relative;
     }
 
     .content {
@@ -544,7 +545,18 @@ button:hover {
     .content-right img {
         max-width: 50%; /* Ensure images do not overflow their container */
         height: auto; /* Maintain aspect ratio */
+        visibility: collapse;
         
     }
+
+    .category{
+        margin-top: 1px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        padding-top: 1px;
+        display: flex;
+       
 }
 
+}
